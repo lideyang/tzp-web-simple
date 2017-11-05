@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>投资派-登录</title>
+    <!-- 公共样式 -->
+    <link rel="stylesheet" href="/public/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/public/font/iconfont.css">
+    <link rel="stylesheet" href="/src/css/global.css">
+    <!-- 页面样式 -->
+    <link rel="stylesheet" href="/src/css/pages/account/login.css">
+    <link rel="stylesheet" href="/src/css/pages/account/register.css">
+</head>
+<body>
+<!-- header -->
+<div class="navbar nav-top">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 navbar-left">
+                <i class="icon-font icon-dianhua"><!--图标--></i>
+                <span class="tel">400-888-7772(9:00-18:00)</span>
+                <a id="publicSeverBtn" href="javascript:;;" class="text-default" data-toggle="popover"
+                   data-placement="bottom">公众号</a>
+                <div id="publicSeverPic" class="hide"><img src="/public/images/scan.png"/></div>
+                <a id="customerGroupBtn" href="javascript:;;" class="text-primary" data-toggle="popover"
+                   data-placement="bottom">客户QQ群</a>
+            </div>
+            <div class="col-lg-6 navbar-right">
+                <div class="pull-right">
+                    <a class="text-default" href="#">APP下载</a>
+                    <a class="text-default" href="#">帮助中心</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- 页面开始 -->
+<div class="login-layer register-layer">
+    <div class="container">
+        <a class="return-home" href="/">返回首页</a>
+    </div>
+    <div class="center-block login-container">
+        <!-- logo -->
+        <div class="logo-layer clearfix">
+            <img class="logo-pic pull-left" src="/public/images/logo.png" alt="投资派logo"/>
+            <div class="info">
+                <p>A股上市全资控股</p>
+                <p>股票代码&nbsp002417</p>
+            </div>
+        </div>
+        <!-- 登录form -->
+        <div class="login-form register-form">
+            <h3 class="login-title">注册</h3>
+            <!--tab-->
+            <ul id="loginTab" class="nav nav-tabs">
+                <li class="active">
+                    <a href="#company" data-toggle="tab">企业用户</a>
+                </li>
+                <li>
+                    <a href="#person" data-toggle="tab">个人用户</a>
+                </li>
+            </ul>
+            <div id="loginTabContent" class="tab-content">
+                <!-- 企业登录 -->
+                <div class="tab-pane fade in active" id="company">
+                    <form class="form-horizontal company-form" id="registerForm">
+                        <div class="form-group">
+                            <div class="col-sm-12">
+                                <div class="list-group">
+                                    <span class="list-group-addon">企业名称</span>
+                                    <input type="text" class="form-control" id="companyName" name="companyName"
+                                           placeholder="请输入您的企业名称">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-sm-12">
+                                <div class="list-group">
+                                    <span class="list-group-addon">手机号</span>
+                                    <input class="form-control" id="userMobile" name="userMobile"
+                                           placeholder="请输入您想绑定的手机号">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-sm-12">
+                                <div class="list-group">
+                                    <span class="list-group-addon">登录密码</span>
+                                    <input class="form-control" id="userPassword" name="userPassword"
+                                           placeholder="6-20位数字、字母组合">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-sm-12">
+                                <div class="list-group code-group">
+                                    <span class="list-group-addon">验证码</span>
+                                    <input class="form-control" id="code" name="code" placeholder="7位数字">
+                                    <span class="text-center list-group-addon list-group-code-btn" id="getMobileCode">获取验证码</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-sm-12">
+                                <div class="list-group">
+                                    <span class="list-group-addon">邀请人</span>
+                                    <input class="form-control" id="inviter" name="inviter" placeholder="可不填">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group agreement">
+                            <div class="col-sm-12">
+                                <label>
+                                    <input class="icheck" type="checkbox" id="agreement" name="agreement" value="true">
+                                    <span class="vertical-middle agree-link">我已同意并阅读<a href="#">《深南金服-投资派注册协议》</a></span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="form-group text-danger msg">
+                            <div class="col-sm-12">
+                                <i class="icon-font icon-error"></i><span class="vertical-middle" id="errorMsg"></span>
+                            </div>
+                        </div>
+                        <div class="form-group submit">
+                            <div class="col-sm-12">
+                                <button type="submit" class="btn btn-primary btn-block">立即注册</button>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-sm-offset-6 col-sm-6">
+                                <a class="pull-right" href="/views/account/login.html">已有账号，去登录</a>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <!-- 个人登录 -->
+                <div class="tab-pane fade" id="person">
+                    <div class="person-form text-center text-default">
+                        <p class="info">投资派官网暂不支持个人会员注册及登录</p>
+                        <img class="login-code" src="/public/images/login_code.png" align="登录二维码"/>
+                        <p>请扫描二维码下载投资派APP</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--公司介绍-->
+        <div class="company-introduce">
+            <ul class="text-center clearfix">
+                <li class="list-1">
+                    <h4>上市控股</h4>
+                    <p>信息透明公开</p>
+                    <p>资源积累深厚</p>
+                </li>
+                <li class="list-2">
+                    <h4>优质资产</h4>
+                    <p>金交所审核甄选</p>
+                    <p>优质资产挂牌发行</p>
+                </li>
+                <li class="list-3">
+                    <h4>精准合作</h4>
+                    <p>国家监管的持牌</p>
+                    <p>类金融机构</p>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!--底部信息-->
+    <div class="copyright text-center">
+        <p>© 2017 投资派 | All rights reserved | 江苏深南互联网金融信息服务有限公司</p>
+        <p>苏ICP备16020043号-2</p>
+    </div>
+</div>
+<!-- 框架js -->
+<script src="/public/js/jquery-1.12.4.min.js"></script>
+<script src="/public/js/bootstrap.min.js"></script>
+<!-- 公共js -->
+<script src="/src/js/common.js"></script>
+<!-- 页面js -->
+<script src="/public/js/plugins/jquery.validate.min.js"></script>
+<script src="/src/js/tools/validate_cn.js"></script>
+<script src="/public/js/plugins/icheck/icheck.min.js"></script>
+<script src="/src/js/plugins/jquery.CountDown.js"></script>
+<script src="/public/js/plugins/layer/layer.js"></script>
+<script src="/src/js/pages/account/register.js"></script>
+</body>
+</html>

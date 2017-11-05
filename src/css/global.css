@@ -1,0 +1,127 @@
+/* global */
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.no-padding-gutter {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.icon-font {
+    vertical-align: middle;
+    font-size: 18px;
+}
+
+.vertical-middle {
+    vertical-align: middle;
+}
+
+.text-default {
+    color: #666;
+}
+
+/* header */
+.nav-top {
+    color: #060001;
+    background-color: #f1f0ef;
+    min-height: 36px;
+    margin: 0;
+}
+.nav-top a{
+    margin: 0 5px 0 0;
+}
+.nav-top .navbar-left, .nav-top .navbar-right {
+    height: 36px;
+    line-height: 36px;
+}
+
+.nav-top .navbar-left .icon-dianhua {
+    font-size: 20px;
+    vertical-align: middle;
+}
+
+.nav-top .navbar-left .tel {
+    margin: 0 15px 0 0;
+}
+
+/* btn */
+.btn {
+    line-height: 2.2;
+    font-size: 18px;
+}
+
+/* form */
+.form-control {
+    height: 44px;
+}
+
+.form-control-feedback {
+    display: none;
+}
+
+.form-horizontal .has-feedback .form-control-feedback {
+    display: block;
+    height: 44px;
+    line-height: 44px;
+}
+/* icheck */
+.icheckbox,
+.iradio {
+    display: inline-block;
+    *display: inline;
+    vertical-align: middle;
+    margin: 0;
+    padding: 0;
+    width: 22px;
+    height: 22px;
+    background: url('/public/js/plugins/icheck/blue.png') no-repeat;
+    border: none;
+    cursor: pointer;
+}
+
+.icheckbox {
+    background-position: 0 0;
+}
+.icheckbox.hover {
+    background-position: -24px 0;
+}
+.icheckbox.checked {
+    background-position: -48px 0;
+}
+.icheckbox.disabled {
+    background-position: -72px 0;
+    cursor: default;
+}
+.icheckbox.checked.disabled {
+    background-position: -96px 0;
+}
+
+.iradio {
+    background-position: -120px 0;
+}
+.iradio.hover {
+    background-position: -144px 0;
+}
+.iradio.checked {
+    background-position: -168px 0;
+}
+.iradio.disabled {
+    background-position: -192px 0;
+    cursor: default;
+}
+.iradio.checked.disabled {
+    background-position: -216px 0;
+}
+
+/* HiDPI support */
+@media (-o-min-device-pixel-ratio: 5/4), (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 120dpi), (min-resolution: 1.25dppx) {
+    .icheckbox,
+    .iradio {
+        background-image: url('/public/js/plugins/icheck/blue@2x.png');
+        -webkit-background-size: 240px 24px;
+        background-size: 240px 24px;
+    }
+}

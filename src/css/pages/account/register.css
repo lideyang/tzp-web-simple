@@ -1,0 +1,43 @@
+/*注册页*/
+.register-layer .register-form .company-form .list-group {
+    position: relative;
+    margin: 0;
+}
+
+.register-layer .register-form .company-form .list-group .list-group-addon {
+    position: absolute;
+    top: 1px;
+    left: 1px;
+    width: 86px;
+    height: 42px;
+    line-height: 42px;
+    color: #666;
+    padding-left: 18px;
+    border-radius: 4px;
+}
+
+.register-layer .register-form .company-form .list-group .form-control {
+    padding-left: 86px;
+}
+
+.register-layer .register-form .company-form .list-group .form-control-feedback {
+    right: 0;
+}
+
+.register-layer .register-form .company-form .list-group.code-group .form-control-feedback {
+    right: 90px;
+}
+
+.register-layer .register-form .company-form .list-group.code-group .list-group-code-btn {
+    left: auto;
+    right: 2px;
+    width: 90px;
+    padding-left: 0;
+    border-radius: 0;
+    cursor: pointer;
+    user-select: none;
+}
+
+.register-layer .register-form .company-form .agreement .agree-link {
+    margin: 0 0 0 5px;
+}
