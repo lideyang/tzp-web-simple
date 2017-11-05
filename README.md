@@ -2,7 +2,7 @@
 
 ###DEMO
 我发到自己的博客可以外网看到效果
-[lidy个人博客](http://tzp.lideyang.net)
+[lidy个人博客](http://tzp.lideyang.net/views/account/login.html)
 
 ### 如何显示
 
@@ -19,7 +19,7 @@
         ├── js                                // js文件
 			├── pages                         // 页面业务逻辑js
 			├── plugins                       // 全局使用的插件
-        	├── tools                         // 工具类
+			├── tools                         // 工具类
 		├── sass                              // bootstrap预编译样式，因为改了一些全局样式，以后用来生成bootstrap.css
 	├── views                        	  	  // 静态页面html视图
 .
