@@ -5,7 +5,7 @@
 }
 
 .login-layer .login-container {
-    width: 472px;
+    width: 414px;
 }
 
 .login-layer .container {
@@ -35,7 +35,7 @@
 
 /* 登录form */
 .login-form {
-    padding: 32px 60px;
+    padding: 32px 48px;
     background-color: #fff;
 }
 
@@ -73,26 +73,26 @@
     margin: 20px 0 0;
 }
 
-.login-form .tab-content .company-form .code-pic {
+.login-form .company-form .code-pic {
     padding-left: 0;
 }
 
-.login-form .tab-content .company-form .code-pic img {
+.login-form .company-form .code-pic img {
     width: 100%;
     height: 44px;
 }
 
-.login-form .tab-content .company-form .msg {
+.login-form .company-form .msg {
     height: 30px;
     visibility: hidden;
     margin-bottom: 10px;
 }
 
-.login-form .tab-content .company-form .msg .icon-error {
+.login-form .company-form .msg .icon-error {
     margin: 0 3px 0 0;
 }
 
-.login-form .tab-content .company-form .submit {
+.login-form .company-form .submit {
     margin-top: 0px;
 }
 
@@ -104,16 +104,16 @@
 .login-layer .company-introduce ul li {
     float: left;
     padding: 86px 0 0;
-    width: 157px;
-    background: url(/public/images/login_commany_info.png) no-repeat 46px 0;
+    width: 133px;
+    background: url(/public/images/login_commany_info.png) no-repeat 33px 0;
 }
 
 .login-layer .company-introduce ul li.list-2 {
-    background-position: -85px 0;
+    background-position: -95px 0;
 }
 
 .login-layer .company-introduce ul li.list-3 {
-    background-position: -214px 0;
+    background-position: -225px 0;
 }
 
 .login-layer .company-introduce ul li h4 {

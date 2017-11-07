@@ -41,3 +41,11 @@
 .register-layer .register-form .company-form .agreement .agree-link {
     margin: 0 0 0 5px;
 }
+
+/* 找回密码页面 */
+.forget-pwd .login-title {
+    margin-bottom: 10px;
+}
+.forget-pwd .progress-info {
+    margin: 0 0 50px;
+}
