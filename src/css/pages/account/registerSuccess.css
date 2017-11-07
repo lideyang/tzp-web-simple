@@ -3,7 +3,7 @@
 }
 
 .reg-success-container .content {
-    padding: 70px;
+    padding: 70px 48px 50px;
     background-color: #fff;
 }
 
@@ -16,18 +16,14 @@
     color: #32d749;
 }
 
-.reg-success-container .content h4 {
+.reg-success-container .content h4,.reg-success-container .content > p {
     margin: 0 0 20px;
-}
-
-.reg-success-container .content > p {
-    margin-bottom: 15px;
 }
 
 .reg-success-container .content .company-auto {
     width: 170px;
-    margin: 0 auto 15px;
-    padding: 8px 0 20px;
+    margin: 0 auto 20px;
+    padding: 12px 0;
     border: 1px solid #ead6b2;
     border-radius: 16px;
     box-shadow: 0 0 3px rgba(217, 181, 117, .75);

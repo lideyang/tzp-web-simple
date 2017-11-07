@@ -104,16 +104,16 @@
 .login-layer .company-introduce ul li {
     float: left;
     padding: 86px 0 0;
-    width: 133px;
-    background: url(/public/images/login_commany_info.png) no-repeat 33px 0;
+    width: 137px;
+    background: url(/public/images/login_commany_info.png) no-repeat 36px 0;
 }
 
 .login-layer .company-introduce ul li.list-2 {
-    background-position: -95px 0;
+    background-position: -92px 0;
 }
 
 .login-layer .company-introduce ul li.list-3 {
-    background-position: -225px 0;
+    background-position: -222px 0;
 }
 
 .login-layer .company-introduce ul li h4 {

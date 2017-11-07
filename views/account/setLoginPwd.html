@@ -4,14 +4,14 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>投资派-注册成功</title>
+	<title>投资派-设置登录密码</title>
 	<!-- 公共样式 -->
 	<link rel="stylesheet" href="/public/css/bootstrap.min.css">
 	<link rel="stylesheet" href="/public/font/iconfont.css">
 	<link rel="stylesheet" href="/src/css/global.css">
 	<!-- 页面样式 -->
 	<link rel="stylesheet" href="/src/css/pages/account/login.css">
-	<link rel="stylesheet" href="/src/css/pages/account/registerSuccess.css">
+	<link rel="stylesheet" href="/src/css/pages/account/register.css">
 </head>
 <body>
 <!-- header -->
@@ -41,7 +41,7 @@
 	<div class="container">
 		<a class="return-home" href="/">返回首页</a>
 	</div>
-	<div class="center-block login-container reg-success-container">
+	<div class="center-block login-container">
 		<!-- logo -->
 		<div class="logo-layer clearfix">
 			<img class="logo-pic pull-left" src="/public/images/logo.png" alt="投资派logo"/>
@@ -50,18 +50,43 @@
 				<p>股票代码&nbsp002417</p>
 			</div>
 		</div>
-		<!-- 注册成功内容开始 -->
-		<div class="content text-center">
-			<h1 class="title"><i class="icon-font icon-right"></i></h1>
-			<h4>恭喜您注册成功！<a class="text-primary" href="login.html">立即登录</a></h4>
-			<p>建议尽快完成以下投资前的准备</p>
-			<div class="company-auto">
-				<img src="/public/images/company_auto.png" alt="企业资格认证"/>
-			</div>
-			<p class="text-danger">
-				<i class="icon-font icon-error vertical-middle"><!--图标--></i>
-				<span class="vertical-middle">完成企业资质认证，才能开始投资</span>
-			</p>
+		<!-- 找回密码form -->
+		<div class="login-form register-form forget-pwd">
+			<h3 class="login-title">找回密码</h3>
+			<p class="text-primary text-center progress-info">设置登录密码</p>
+			<form class="form-horizontal company-form forget-pwd-form" id="setLoginPwdForm" action="setLoginPwdSuccess.html">
+				<div class="form-group">
+					<div class="col-sm-12">
+						<div class="list-group">
+							<span class="list-group-addon">登录密码</span>
+							<input class="form-control" id="loginPwd" name="loginPwd" type="password" placeholder="请输入您的新登录密码">
+						</div>
+					</div>
+				</div>
+				<div class="form-group">
+					<div class="col-sm-12">
+						<div class="list-group">
+							<span class="list-group-addon">确认密码</span>
+							<input class="form-control" id="reLoginPwd" name="reLoginPwd" type="password" placeholder="再次输入您的新登录密码">
+						</div>
+					</div>
+				</div>
+				<div class="form-group text-danger msg">
+					<div class="col-sm-12">
+						<i class="icon-font icon-error"></i><span class="vertical-middle" id="errorMsg"></span>
+					</div>
+				</div>
+				<div class="form-group submit">
+					<div class="col-sm-12">
+						<button type="submit" class="btn btn-primary btn-block">完成</button>
+					</div>
+				</div>
+				<div class="form-group">
+					<div class="col-sm-offset-6 col-sm-6">
+						<a class="pull-right text-primary" href="/views/account/login.html">返回登录</a>
+					</div>
+				</div>
+			</form>
 		</div>
 		<!--公司介绍-->
 		<div class="company-introduce">
@@ -96,5 +121,10 @@
 <!-- 公共js -->
 <script src="/src/js/common.js"></script>
 <!-- 页面js -->
+<script src="/public/js/plugins/jquery.validate.min.js"></script>
+<script src="/src/js/tools/validate_cn.js"></script>
+<script src="/src/js/plugins/jquery.CountDown.js"></script>
+<script src="/public/js/plugins/layer/layer.js"></script>
+<script src="/src/js/pages/account/setLoginPwd.js"></script>
 </body>
 </html>
