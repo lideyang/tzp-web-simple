@@ -105,6 +105,66 @@
 							</li>
 						</ul>
 					</div>
+                                        <div class="group">
+                                                <ul class="clearfix">
+                                                        <li class="name">
+                                                                派派福1710260002
+                                                        </li>
+                                                        <li class="rate">
+                                                                <span class="text-primary rate">8</span>
+                                                                <span class="text-primary decimal">%+0.8%</span>
+                                                        </li>
+                                                        <li class="term">
+                                                                180天
+                                                        </li>
+                                                        <li class="money">
+                                                                起投金额（元）
+                                                        </li>
+                                                        <li class="process">
+                                                                <div class="progress">
+                                                                        <div class="progress-bar" role="progressbar" data-progress="60">
+                                                                                <span class="text-default">60%</span>
+                                                                        </div>
+                                                                </div>
+                                                        </li>
+                                                        <li class="surplus">
+                                                                50,000.00
+                                                        </li>
+                                                        <li class="status">
+                                                                <a class="btn btn-second">立即认购</a>
+                                                        </li>
+                                                </ul>
+                                        </div>
+                                        <div class="group">
+                                                <ul class="clearfix">
+                                                        <li class="name">
+                                                                派派福1710260002
+                                                        </li>
+                                                        <li class="rate">
+                                                                <span class="text-primary rate">8</span>
+                                                                <span class="text-primary decimal">%+0.8%</span>
+                                                        </li>
+                                                        <li class="term">
+                                                                180天
+                                                        </li>
+                                                        <li class="money">
+                                                                起投金额（元）
+                                                        </li>
+                                                        <li class="process">
+                                                                <div class="progress">
+                                                                        <div class="progress-bar" role="progressbar" data-progress="60">
+                                                                                <span class="text-default">60%</span>
+                                                                        </div>
+                                                                </div>
+                                                        </li>
+                                                        <li class="surplus">
+                                                                50,000.00
+                                                        </li>
+                                                        <li class="status">
+                                                                <a class="btn btn-second">立即认购</a>
+                                                        </li>
+                                                </ul>
+                                        </div>
 					<div class="group">
 						<ul class="clearfix">
 							<li class="name">
@@ -198,10 +258,38 @@
 					</div>
 				</div>
 			</div>
+			<!--分页-->
+			<nav aria-label="...">
+				<ul class="pagination pull-right">
+					<li class="disabled">
+                                                <a href="#">
+                                                        <span>&laquo;</span>
+                                                </a>
+                                        </li>
+					<li class="active">
+                                                <a href="#">1</a>
+                                        </li>
+					<li>
+                                                <a href="#">2 </a>
+                                        </li>
+					<li>
+                                                <a href="#">3 </a>
+                                        </li>
+					<li>
+						<a href="#">
+							<span>&raquo;</span>
+						</a>
+					</li>
+				</ul>
+			</nav>
 		</div>
 	</div>
 </div>
-
+<div class="m-join">
+        <div class="wp">
+                <a href="javascript:void(0);" class="appClick">立即加入领888红包</a>
+        </div>
+</div>
 <!--footer-->
 <div class="footer">
 	<div class="m-footer">
@@ -235,11 +323,45 @@
 		</div>
 	</div>
 </div>
+<!--左侧工具栏-->
+<div class="rightTop">
+        <div class="kf">
+                <div class="suspend-h"><img src="/public//images/v2/main/phone.png"><em><img src="/public//images/v2/main/phoneOn.png"> </em></div>
+                <div class="kf_hover"><p>请拨打我们的免费热线</p><em>400-888-7772</em></div>
+        </div>
+        <div class="contact">
+                <a href="javascript:;" onclick="common.contactCustomer()" target="_blank"><div class="suspend-h"><img src="/public//images/v2/main/service.png"><em><img src="/public//images/v2/main/serviceOn.png"> </em></div></a>
+        </div>
+        <div class="app">
+                <div class="suspend-h"><img src="/public//images/v2/main/app.png"><em><img src="/public//images/v2/main/appOn.png"> </em></div>
+                <div class="app_hover"></div>
+        </div>
+        <div class="calculator" onclick="common.feedbackMessage()">
+                <div class="suspend-h"><img src="/public//images/v2/main/calculator.png"><em><img src="/public//images/v2/main/calculatorOn.png"> </em></div>
+        </div>
+        <div id="top" style="display: none">
+                <div class="suspend-h TOP"><img src="/public//images/v2/main/contact.png"><em>返回<br>顶部</em></div>
+        </div>
+</div>
+<!--意见反馈灯箱-->
+<div class="calculator_hover" id="layeryijian" style="display: none;">
+	<h1>您的反馈对我们至关重要</h1>
+	<form>
+		<div>
+			<textarea placeholder="请留下您的宝贵建议，以便我们改正" id="feedMsg"></textarea>
+		</div>
+		<div>
+			<input type="text" maxlength="11" placeholder="请输入您的手机号码" id="feedPhone">
+		</div>
+		<span><input type="button" class="input-text" value="提交" id="submitFeedBack"><input type="reset" value="取消" onclick="layer.closeAll()"></span>
+	</form>
+</div>
 <!-- 框架js -->
 <script src="/public/js/jquery-1.12.4.min.js"></script>
 <script src="/public/js/bootstrap.min.js"></script>
 <!-- 公共js -->
 <script src="/src/js/common.js"></script>
+<script src="/public/js/plugins/layer/layer.js"></script>
 <!-- 页面js -->
 <script src="/src/js/pages/product/list.js"></script>
 </body>

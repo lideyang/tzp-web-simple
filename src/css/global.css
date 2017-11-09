@@ -95,6 +95,33 @@ ul {
     *padding-top: 30px; /*ie67*/
 }
 
+/*活动*/
+.m-join {
+    background: url(/public/images/v2/index/join.jpg) no-repeat top center;
+    width: 100%;
+    height: 212px;
+    margin: 0 auto;
+}
+
+.m-join div {
+    text-align: center;
+    padding: 85px 0;
+}
+
+.m-join div a {
+    font-size: 24px;
+    color: #fff;
+    padding: 15px 85px;
+    border: 1px solid #fff;
+    border-radius: 5px;
+}
+
+.m-join div a:hover {
+    background-color: #fff;
+    color: #666;
+    text-decoration: none
+}
+
 /* footer */
 .m-footer {
     position: relative;
@@ -175,6 +202,231 @@ ul {
 
 .m-copyright .bd p {
     margin: 0 0 2px;
+}
+
+/* 右侧工具栏 */
+.rightTop {
+    width: 55px;
+    border-right: none;
+    background-color: #fff;
+    position: fixed;
+    top: 50%;
+    margin-top: -70px;
+    border-radius: 5px 0 0 5px;
+    right: 0;
+    z-index: 10;
+}
+
+.rightTop > div {
+    width: 55px;
+    height: 55px;
+    font-size: 16px;
+    cursor: pointer;
+    position: relative;
+    box-sizing: border-box;
+    transition: background-color 0.2s linear;
+    -webkit-transition: background-color 0.2s linear;
+}
+
+.suspend-h {
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: block;
+    text-align: center;
+}
+
+.suspend-h a {
+    color: #313235;
+}
+
+.suspend-h > img {
+    position: absolute;
+    left: 13px;
+    top: 15px;
+    transition: all 0.2s linear;
+    -webkit-transition: all 0.2s linear;
+}
+
+.suspend-h em > img, .TOP em {
+    position: absolute;
+    right: -60px;
+    top: 13px;
+    transition: all 0.2s linear;
+    -webkit-transition: all 0.2s linear;
+}
+
+.TOP em {
+    right: -65px;
+    top: 5px;
+    font-size: 14px;
+    color: #fff;
+}
+
+.rightTop > div:hover, .rightTop > div:hover .suspend-h a {
+    background-color: #ff6533;
+    color: #fff;
+}
+
+.rightTop > div:hover .suspend-h > img {
+    transform: translate(-68px);
+    -webkit-transform: translate(-74px);
+}
+
+.rightTop > div:hover .suspend-h em > img {
+    transform: translate(-74px);
+    -webkit-transform: translate(-74px);
+}
+
+.rightTop > div:hover .TOP em {
+    transform: translate(-78px);
+    -webkit-transform: translate(-78px);
+}
+
+.kf_hover, .app_hover {
+    position: absolute;
+    right: 36px;
+    display: none;
+    padding-right: 15px;
+}
+
+.kf_hover {
+    right: 52px;
+}
+
+.kf:hover .kf_hover {
+    display: block;
+}
+
+.app:hover .app_hover {
+    display: block;
+}
+
+.contact:hover .contact_hover {
+    display: block;
+}
+
+.calculator:hover {
+    display: block;
+}
+
+.kf_hover {
+    width: 190px;
+    height: 54px;
+    top: 0;
+    color: #fff;
+    text-align: center;
+    background: url(/public/images/v2/main/kf.png) no-repeat top center;
+    font-size: 14px;
+}
+
+.kf_hover p {
+    padding-top: 7px;
+    margin: 0 0 2px;
+}
+
+.kf_hover em {
+    padding-top: 20px;
+}
+
+.app_hover {
+    width: 191px;
+    height: 178px;
+    right: 45px;
+    top: -58px;
+    background: url(/public/images/v2/main/ewm.png) no-repeat top center;
+}
+
+.calculator_hover {
+    font-size: 14px;
+    color: #666666;
+    background-color: #fff;
+    z-index: 10;
+}
+
+.calculator_hover h1 {
+    text-align: center;
+    padding: 20px 0;
+    margin: 0 0 10px;
+    font-size: 14px;
+    border-bottom: 1px solid #D2D2D2;
+}
+
+.calculator_hover form {
+    padding: 0 30px;
+}
+
+.calculator_hover form div {
+    margin-bottom: 5px;
+}
+
+.calculator_hover form div textarea {
+    width: 100%;
+    height: 85px;
+    color: #666666;
+    font-size: 12px;
+    background-color: #F2F2F2;
+    padding-left: 5px;
+    padding-top: 5px;
+    border: 1px solid #D2D2D2;
+}
+
+.calculator_hover form div > input {
+    width: 100%;
+    height: 30px;
+    color: #666666;
+    font-size: 12px;
+    background-color: #F2F2F2;
+    padding-left: 5px;
+    border: 1px solid #D2D2D2;
+}
+
+.calculator_hover form span {
+    float: right;
+    margin-top: 5px;
+}
+
+.calculator_hover form span > input[type="button"] {
+    background-color: #FF6F4C;
+    color: #fff;
+    padding: 3px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 60px;
+    height: 30px;
+}
+
+.calculator_hover form span > input[type="reset"] {
+    background-color: #D2D2D2;
+    color: #666666;
+    padding: 3px 15px;
+    border-radius: 5px;
+    margin-left: 5px;
+    cursor: pointer;
+    width: 60px;
+    height: 30px;
+}
+
+.m-partner .bd {
+    padding-bottom: 25px;
+}
+
+.m-partner .bd li {
+    float: left;
+    color: #313235;
+    margin-bottom: 40px;
+}
+
+.m-partner .bd li + li {
+    margin-left: 40px;
+}
+
+.m-partner .bd li:nth-of-type(5) {
+    margin-left: 0;
+}
+
+.m-partner .bd li a {
 }
 
 /* btn */
