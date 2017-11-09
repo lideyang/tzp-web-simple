@@ -42,10 +42,16 @@
     margin: 0 0 0 5px;
 }
 
+.register-layer .register-form .company-form .list-group.submit .btn {
+    line-height: 2.2;
+    font-size: 18px;
+}
+
 /* 找回密码页面 */
 .forget-pwd .login-title {
     margin-bottom: 10px;
 }
+
 .forget-pwd .progress-info {
     margin: 0 0 50px;
 }

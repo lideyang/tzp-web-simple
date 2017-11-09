@@ -24,15 +24,22 @@ ul {
 }
 
 /* header */
+.wp {
+    width: 1200px;
+    margin: 0 auto;
+}
+
 .nav-top {
     color: #060001;
     background-color: #f1f0ef;
     min-height: 36px;
     margin: 0;
 }
-.nav-top a{
+
+.nav-top a {
     margin: 0 5px 0 0;
 }
+
 .nav-top .navbar-left, .nav-top .navbar-right {
     height: 36px;
     line-height: 36px;
@@ -47,10 +54,141 @@ ul {
     margin: 0 15px 0 0;
 }
 
-/* btn */
-.btn {
-    line-height: 2.2;
+/* main-nav */
+.main-nav {
+    position: relative;
+    height: 70px;
+    line-height: 70px;
+    z-index: 2;
+    background-color: #fff;
+}
+
+.main-nav .container {
+    width: 1200px;
+}
+
+.main-nav .nav-menu li {
+    float: left;
+    line-height: 70px;
+    margin-left: 38px;
+}
+
+.main-nav .nav-menu li a {
+    display: inline-block;
+    border-bottom: 2px solid transparent;
+    color: #666666;
     font-size: 18px;
+    line-height: 35px;
+}
+
+.main-nav .nav-menu li a:hover, .main-nav .nav li.on a {
+    border-color: #ff6f4c;
+    color: #ff6f4c;
+    text-decoration: none;
+}
+
+.main-nav .header-logo a {
+    width: 290px;
+}
+
+.main-nav .header-logo a img {
+    *padding-top: 30px; /*ie67*/
+}
+
+/* footer */
+.m-footer {
+    position: relative;
+    background: #fff;
+    padding-top: 25px;
+}
+
+.pos-r {
+    position: relative;
+    border-bottom: 1px solid #a0a0a0;
+    overflow: hidden;
+    height: 150px;
+}
+
+.footer-logo {
+    position: absolute;
+    background: url(/public/images/v2/index/footer-logo.png) no-repeat top center;
+    width: 161px;
+    height: 66px;
+    left: 50px;
+    top: 35px;
+}
+
+.m-footer .qrcode {
+    position: absolute;
+    left: 340px;
+    top: 0;
+}
+
+.m-footer .qrcode li {
+    float: left;
+    text-align: center;
+    margin-right: 35px;
+    font-size: 16px;
+    color: #666666;
+}
+
+.m-footer .qrcode li p {
+    line-height: 34px;
+    margin: 0;
+}
+
+.m-footer .phone {
+    position: absolute;
+    right: 30px;
+    top: 35px;
+    color: #666666;
+}
+
+.m-footer .phone h2 {
+    font-size: 36px;
+    margin: 0;
+    line-height: 1;
+}
+
+.m-footer .phone h6 {
+    font-size: 16px;
+    margin: 0;
+    line-height: 32px;
+}
+
+.m-footer .footer-p {
+    font-size: 14px;
+    color: #666666;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.m-copyright {
+    background: #434343;
+    color: #fff;
+}
+
+.m-copyright .bd {
+    text-align: center;
+    padding: 30px 0;
+}
+
+.m-copyright .bd p {
+    margin: 0 0 2px;
+}
+
+/* btn */
+.btn-second {
+    color: #333;
+    background-color: #fff;
+    border-color: #ccc;
+}
+
+.btn-second:hover {
+    color: #fff;
+    background-color: #fd714b;
+    border-color: #fd714b;
+    box-shadow: 0 1px 1px 2px rgba(0, 0, 0, .1);
 }
 
 /* form */
@@ -67,6 +205,7 @@ ul {
     height: 44px;
     line-height: 44px;
 }
+
 /* icheck */
 .icheckbox,
 .iradio {
@@ -75,8 +214,8 @@ ul {
     vertical-align: middle;
     margin: 0;
     padding: 0;
-    width: 22px;
-    height: 22px;
+    width: 18px;
+    height: 18px;
     background: url('/public/js/plugins/icheck/blue.png') no-repeat;
     border: none;
     cursor: pointer;
@@ -85,33 +224,41 @@ ul {
 .icheckbox {
     background-position: 0 0;
 }
+
 .icheckbox.hover {
-    background-position: -24px 0;
+    background-position: -20px 0;
 }
+
 .icheckbox.checked {
-    background-position: -48px 0;
+    background-position: -40px 0;
 }
+
 .icheckbox.disabled {
-    background-position: -72px 0;
+    background-position: -60px 0;
     cursor: default;
 }
+
 .icheckbox.checked.disabled {
-    background-position: -96px 0;
+    background-position: -84px 0;
 }
 
 .iradio {
     background-position: -120px 0;
 }
+
 .iradio.hover {
     background-position: -144px 0;
 }
+
 .iradio.checked {
     background-position: -168px 0;
 }
+
 .iradio.disabled {
     background-position: -192px 0;
     cursor: default;
 }
+
 .iradio.checked.disabled {
     background-position: -216px 0;
 }

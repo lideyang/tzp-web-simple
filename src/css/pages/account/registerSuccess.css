@@ -19,7 +19,10 @@
 .reg-success-container .content h4,.reg-success-container .content > p {
     margin: 0 0 20px;
 }
-
+.reg-success-container .content .btn{
+    line-height: 2;
+    font-size: 18px;
+}
 .reg-success-container .content .company-auto {
     width: 170px;
     margin: 0 auto 20px;
