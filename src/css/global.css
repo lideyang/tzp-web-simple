@@ -520,7 +520,17 @@ ul {
     .icheckbox,
     .iradio {
         background-image: url('/public/js/plugins/icheck/blue@2x.png');
-        -webkit-background-size: 240px 24px;
-        background-size: 240px 24px;
+        -webkit-background-size: 200px 20px;
+        background-size: 200px 20px;
     }
+}
+
+/* title */
+.page-title {
+    border-left: 12px solid #fd714b;
+    margin: 30px 0;
+    padding: 0 0 0 12px;
+    font-size: 24px;
+    height: 24px;
+    line-height: 24px;
 }

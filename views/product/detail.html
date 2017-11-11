@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>投资派-产品信息</title>
+    <!-- 公共样式 -->
+    <link rel="stylesheet" href="/public/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/public/font/iconfont.css">
+    <link rel="stylesheet" href="/src/css/global.css">
+    <!-- 页面样式 -->
+    <link rel="stylesheet" href="/src/css/pages/product/detail.css">
+</head>
+<body>
+<!-- header -->
+<div class="navbar nav-top">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 navbar-left">
+                <i class="icon-font icon-dianhua"><!--图标--></i>
+                <span class="tel">400-888-7772(9:00-18:00)</span>
+                <a id="publicSeverBtn" href="javascript:;;" class="text-default" data-toggle="popover"
+                   data-placement="bottom">公众号</a>
+                <div id="publicSeverPic" class="hide"><img src="/public/images/scan.png"/></div>
+                <a id="customerGroupBtn" href="javascript:;;" class="text-primary" data-toggle="popover"
+                   data-placement="bottom">客户QQ群</a>
+            </div>
+            <div class="col-lg-6 navbar-right">
+                <div class="pull-right">
+                    <a class="text-default" href="/views/account/register.html">注册</a>
+                    <a class="text-default" href="/views/account/login.html">登录</a>
+                    <a class="text-default" href="#">APP下载</a>
+                    <a class="text-default" href="#">帮助中心</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--导航菜单-->
+<div class="main-nav">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3">
+                <div class="header-logo"><a href="/"><img src="/public/images/v2/index/logo.png"></a></div>
+            </div>
+            <div class="col-lg-9">
+                <ul class="nav-menu pull-right">
+                    <li id="nav_index"><a href="/">首页</a></li>
+                    <li id="nav_pattern"><a href="/static/pattern">交易模式</a></li>
+                    <li id="nav_security"><a href="/static/security">安全保障</a></li>
+                    <li id="nav_info"><a href="/static/platInfo">信息披露</a></li>
+                    <li id="nav_about"><a href="/static/about">关于投资派</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<!--页面开始-->
+<div class="product-detail-banner"><!--背景图--></div>
+<!--投资详情-->
+<div class="product-detail-content">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="product-detail-info pull-left">
+                    <h3 class="text-default title">
+                        <span class="name">派派福1710260002</span>
+                        <span class="split">|</span>按月付息，到期还本
+                    </h3>
+                    <div class="row text-default info">
+                        <div class="col-sm-4 rate">
+                            <h2 class="text-primary">8<span>%+0.8%</span></h2>
+                            <p>历史年化收益率</p>
+                        </div>
+                        <div class="col-sm-4 term">
+                            <h2>6<span>个月</span></h2>
+                            <p>产品期限</p>
+                        </div>
+                        <div class="col-sm-4 money">
+                            <h2>1,500</h2>
+                            <p>起投金额（元）</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-11">
+                            <div class="progress" id="productDetailBar">
+                                <div class="progress-bar" role="progressbar" data-progress="60">
+                                    <span class="text-default">60%</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--余额投资-->
+                <div class="product-detail-subscription pull-left">
+                    <p class="text-default">剩余可投（元）</p>
+                    <h2>50,000.00</h2>
+                    <p class="text-danger subscription-time">认购截止2017-09-27 17:00</p>
+                    <p>账户余额 1,123.44元<a class="btn btn-xs btn-primary pull-right" href="javascript:;;">最大投资</a></p>
+                    <div class="subscription-input">
+                        <input type="number" class="form-control" id="subscriptionTxt" />
+                        <span class="text-default input-text">元</span>
+                    </div>
+                    <button class="btn btn-block btn-lg btn-primary">我要认购</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--投资详情列表-->
+<div class="product-detail-list">
+    <dic class="container">
+        <ul id="detailTab" class="nav nav-tabs">
+            <li class="active">
+                <a href="#protectDetail" data-toggle="tab">项目详情</a>
+            </li>
+            <li>
+                <a href="#productMode" data-toggle="tab">产品模式</a>
+            </li>
+            <li>
+                <a href="#securityGuarantee" data-toggle="tab">安全保障</a>
+            </li>
+            <li>
+                <a href="#investmentRecord" data-toggle="tab">投资记录</a>
+            </li>
+        </ul>
+        <div id="loginTabContent" class="tab-content">
+            <!-- 项目详情 -->
+            <div class="tab-pane fade in active protect-detail" id="protectDetail">
+                <div class="page-title">
+                    项目信息
+                </div>
+                <div class="item-content">
+                    <table class="table table-bordered">
+                        <tbody>
+                        <tr>
+                            <td colspan="3">
+                                项目总额：2,000,000.00元
+                            </td>
+
+                        </tr>
+                        <tr>
+                            <td>
+                                起息日：交易所放款后起息
+                            </td>
+                            <td>
+                                到期日：起息日后6个月
+                            </td>
+                            <td>
+                                收款日：到期日后三个工作日内
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="3">
+                                相关说明：<a href="#" class="text-primary">《产品说明书》</a><a href="#" class="text-primary">《风险揭示书》</a>
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="page-title">
+                    合作机构
+                </div>
+                <div class="clearfix bank-info">
+                    <img class="pull-left" src="/public/images/product/jigou_logo.png">
+                    <div>
+                        <h4><span>深圳亚太租赁资产交易中心有限公司</span><span>资金监管：华夏银行</span></h4>
+                        <p class="text-default">
+                            由光大兴陇信托有限责任公司、翔龙融资租赁（深圳）有限公司、香港租赁有限公司联合发起，经深圳市人民政府特许批准设立，专门为各类金融机构、非金融机构及广大投资者提供“资产交易与综合服务”的要素交易平台.
+                        </p>
+                    </div>
+                </div>
+                <div style="margin-left: 100px">
+                    <img src="/public/images/product/icon-group.png">
+                </div>
+            </div>
+            <!-- 产品模式 -->
+            <div class="tab-pane fade product-mode" id="productMode">
+                <div class="page-title">
+                    什么是派派乐
+                </div>
+                <div class="item-content text-default">
+                    派派乐产品是由投资派合作机构推出的一款收益权转让产品，由金融资产交易所提供挂牌发行，投资派平台提供信息技术服务，资产发行方承担产品本息兑付。投资派严格审查合作机构的资质背景和风险管控能力，甄选优质机构进行合作；综合评估底层资产的收益性、风险性、流动性，根据风险等级严格精选产品；复核审查各项资料及数据信息，提供产品风险预警。
+                </div>
+                <div class="page-title">
+                    派派乐的业务模式
+                </div>
+                <div class="item-content">
+                    <table class="table table-bordered">
+                        <tbody>
+                        <tr>
+                            <td style="width: 140px">
+                                合作金交所：
+                            </td>
+                            <td class="text-default">
+                                深圳亚太租赁资产交易中心有限公司（简称“亚租所”)
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                适用资产：
+                            </td>
+                            <td class="text-default">
+                                小贷资产、保理资产、融租资产等单笔规模较低的资产（一般低于100万）
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                业务模式：
+                            </td>
+                            <td class="text-default">
+                                资产方以其持有的资产收益权为基础，在亚租所申请发行收益权转让产品，亚租所对资产审核通过后，对收益权转让产品进行备案和挂牌，并委托投资派平台提供持续性风险揭示、项目展示、预约认购、信息反馈等一系列服务，投资人则通过投资派平台了解产品信息，注册成为亚租所会员后可认购产品，与发行人签订《认购协议》，在亚租所确权登记后，认购完成。
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                资金结算：
+                            </td>
+                            <td class="text-default">
+                                所有的产品认购资金最终是在亚租所完成清算后，通过银企直联通道，向发行方支付转让对价。
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="item-content">
+                    <img src="/public/images/product/product_mode.png">
+                </div>
+            </div>
+            <!-- 安全保障 -->
+            <div class="tab-pane fade" id="securityGuarantee">
+                <div class="page-title">
+                    资金由银行托管
+                </div>
+                <div class="item-content text-default">
+                    各金融资产交易所为挂牌项目设立专项账户，并委托合作银行提供资金托管服务，实现平台与项目资金完全隔离
+                </div>
+                <div class="page-title">
+                    完善的风控机制
+                </div>
+                <div class="item-content">
+                    <img src="/public/images/product/security_guarantee.png">
+                </div>
+            </div>
+            <!-- 投资记录 -->
+            <div class="tab-pane fade" id="investmentRecord">
+                <table class="table table-bordered text-center text-default">
+                    <thead>
+                        <tr>
+                            <th>投资人</th>
+                            <th> 认购金额（元）</th>
+                            <th>认购时间</th>
+                            <th>状态</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>
+                            135****1234：
+                        </td>
+                        <td>5,00000.00</td>
+                        <td>
+                            2017-10-26 11:12
+                        </td>
+                        <td>认购申请成功</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            135****1234：
+                        </td>
+                        <td>5,00000.00</td>
+                        <td>
+                            2017-10-26 11:12
+                        </td>
+                        <td>认购申请成功</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            135****1234：
+                        </td>
+                        <td>5,00000.00</td>
+                        <td>
+                            2017-10-26 11:12
+                        </td>
+                        <td>认购申请成功</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            135****1234：
+                        </td>
+                        <td>5,00000.00</td>
+                        <td>
+                            2017-10-26 11:12
+                        </td>
+                        <td>认购申请成功</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </dic>
+</div>
+<div class="m-join">
+    <div class="wp">
+        <a href="javascript:void(0);" class="appClick">立即加入领888红包</a>
+    </div>
+</div>
+<!--footer-->
+<div class="footer">
+    <div class="m-footer">
+        <div class="wp pos-r">
+            <div class="footer-logo"></div>
+            <ul class="qrcode clearFix">
+                <li>
+                    <p>下载投资派APP </p>
+                    <img src="/public/images/v2/index/app.png">
+                </li>
+                <li>
+                    <p>关注投资派订阅号 </p>
+                    <img src="/public/images/v2/index/subscribe.png">
+                </li>
+                <li>
+                    <p>关注投资派服务平台 </p>
+                    <img src="/public/images/v2/index/service.png">
+                </li>
+            </ul>
+            <div class="phone">
+                <h2>400-888-7772</h2>
+                <h6>咨询时间：工作日 09:00-18:00</h6>
+            </div>
+        </div>
+        <p class="wp footer-p">商业合作：0513-89128760 | 电子邮箱：business@imtzp.com | 媒体联系邮箱：pr@imtzp.com | 地址：江苏省南通市港闸区江海大道817号江海财富大厦A座18楼</p>
+    </div>
+    <div class="m-copyright">
+        <div class="bd wp">
+            <p>© 2017 投资派 | All rights reserved | 江苏深南互联网金融信息服务有限公司 苏ICP备16020043号-2</p>
+            <p>市场有风险，投资需谨慎</p>
+        </div>
+    </div>
+</div>
+<!--左侧工具栏-->
+<div class="rightTop">
+    <div class="kf">
+        <div class="suspend-h"><img src="/public//images/v2/main/phone.png"><em><img
+                src="/public//images/v2/main/phoneOn.png"> </em></div>
+        <div class="kf_hover"><p>请拨打我们的免费热线</p><em>400-888-7772</em></div>
+    </div>
+    <div class="contact">
+        <a href="javascript:;" onclick="common.contactCustomer()" target="_blank">
+            <div class="suspend-h"><img src="/public//images/v2/main/service.png"><em><img
+                    src="/public//images/v2/main/serviceOn.png"> </em></div>
+        </a>
+    </div>
+    <div class="app">
+        <div class="suspend-h"><img src="/public//images/v2/main/app.png"><em><img
+                src="/public//images/v2/main/appOn.png"> </em></div>
+        <div class="app_hover"></div>
+    </div>
+    <div class="calculator" onclick="common.feedbackMessage()">
+        <div class="suspend-h"><img src="/public//images/v2/main/calculator.png"><em><img
+                src="/public//images/v2/main/calculatorOn.png"> </em></div>
+    </div>
+    <div id="top" style="display: none">
+        <div class="suspend-h TOP"><img src="/public//images/v2/main/contact.png"><em>返回<br>顶部</em></div>
+    </div>
+</div>
+<!--意见反馈灯箱-->
+<div class="calculator_hover" id="layeryijian" style="display: none;">
+    <h1>您的反馈对我们至关重要</h1>
+    <form>
+        <div>
+            <textarea placeholder="请留下您的宝贵建议，以便我们改正" id="feedMsg"></textarea>
+        </div>
+        <div>
+            <input type="text" maxlength="11" placeholder="请输入您的手机号码" id="feedPhone">
+        </div>
+        <span><input type="button" class="input-text" value="提交" id="submitFeedBack"><input type="reset" value="取消"
+                                                                                            onclick="layer.closeAll()"></span>
+    </form>
+</div>
+<!-- 框架js -->
+<script src="/public/js/jquery-1.12.4.min.js"></script>
+<script src="/public/js/bootstrap.min.js"></script>
+<!-- 公共js -->
+<script src="/src/js/common.js"></script>
+<script src="/public/js/plugins/layer/layer.js"></script>
+<!-- 页面js -->
+<script src="/src/js/pages/product/detail.js"></script>
+</body>
+</html>

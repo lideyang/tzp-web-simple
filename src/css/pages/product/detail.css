@@ -1,0 +1,199 @@
+/* 产品详情页 */
+body {
+    background-color: #efefef;
+}
+
+.product-detail-banner {
+    position: absolute;
+    top: 108px;
+    width: 100%;
+    height: 348px;
+    background: url(/public/images/product/product_detail_bg.png) no-repeat center;
+    z-index: 0;
+}
+
+.product-detail-content {
+    position: relative;
+    margin: 50px 0 20px;
+}
+
+.container {
+    width: 1200px;
+}
+
+.product-detail-content .product-detail-info {
+    width: 808px;
+    padding: 58px;
+    border-right: 1px solid #eaeaea;
+    background-color: #fff;
+}
+
+.product-detail-content .product-detail-info h3.title {
+    margin: 0 0 34px;
+    font-size: 24px;
+    font-weight: normal;
+}
+
+.product-detail-content .product-detail-info h3.title span {
+    color: #060001;
+}
+
+.product-detail-content .product-detail-info h3.title span.split {
+    margin: 0 5px 0 2px;
+}
+
+.product-detail-content .product-detail-info .info {
+    margin: 0 0 28px -46px;
+    text-align: center;
+}
+
+.product-detail-content .product-detail-info .info h2 {
+    font-size: 60px;
+    font-weight: normal;
+    margin: 0 0 20px;
+}
+
+.product-detail-content .product-detail-info .info h2 span {
+    font-size: 30px;
+}
+
+.product-detail-content .product-detail-info .info p {
+    margin: 0;
+    padding: 0 0 0 5px;
+    font-size: 18px;
+}
+
+.product-detail-content .product-detail-info .progress {
+    position: relative;
+    border-radius: 0;
+    height: 4px;
+    overflow: visible;
+}
+
+.product-detail-content .product-detail-info .progress .progress-bar {
+    width: 0;
+    transition: width .5s ease-in .2s;
+}
+
+.product-detail-content .product-detail-info .progress .progress-bar span {
+    position: absolute;
+    top: -9px;
+    right: -65px;
+    font-size: 24px;
+    color: #999;
+}
+
+.product-detail-subscription {
+    width: 390px;
+    padding: 25px 50px;
+    color: #333;
+    font-size: 16px;
+    background: url(/public/images/product/product_detail_subscription_bg.png) no-repeat;
+}
+
+.product-detail-subscription p {
+    margin: 0 0 10px;
+}
+
+.product-detail-subscription h2 {
+    font-size: 60px;
+    margin: 0 0 10px;
+}
+
+.product-detail-subscription p.subscription-time {
+    margin: 0 0 30px;
+}
+
+.product-detail-subscription div.subscription-input {
+    position: relative;
+}
+
+.product-detail-subscription div.subscription-input .input-text {
+    position: absolute;
+    right: 26px;
+    top: 12px;
+}
+
+.product-detail-subscription .subscription-input {
+    margin: 0 0 15px;
+}
+
+.product-detail-list {
+    width: 1200px;
+    margin: 0 auto 30px;
+    background-color: #fff;
+}
+
+.product-detail-list .nav-tabs {
+    border-bottom: 1px solid #bebebe;
+    padding-left: 70px;
+}
+
+.product-detail-list .nav-tabs li {
+    margin: 0;
+}
+
+.product-detail-list .nav-tabs li a, .product-detail-list .nav-tabs li a:hover, .product-detail-list .nav-tabs li a:focus {
+    border: none;
+    border-radius: 0;
+    color: #666;
+}
+
+.product-detail-list .nav-tabs li a {
+    width: 142px;
+    padding: 16px 0;
+    margin: 0;
+    font-size: 18px;
+    text-align: center;
+}
+
+.product-detail-list .nav-tabs li.active a {
+    background-color: #ff6f4c;
+    color: #fff;
+}
+
+.product-detail-list .tab-content {
+    padding: 25px 70px;
+    width: 1025px;
+}
+
+.product-detail-list .tab-content .page-title {
+    font-size: 18px;
+    height: 18px;
+    line-height: 18px;
+    color: #333;
+    border-left-width: 8px;
+}
+.product-detail-list .tab-content .item-content{
+    margin: 0 0 45px 20px;
+    line-height: 1.6;
+}
+.product-detail-list .tab-content .protect-detail{
+    padding: 0 0 50px;
+}
+.product-detail-list .tab-content .table td, .product-detail-list .tab-content .table.table-bordered {
+    border-color: #d3cea3;
+}
+.product-detail-list .tab-content .table thead th{
+    background-color: #bb944a;
+    color:#fff;
+    text-align: center;
+    height: 48px;
+    border-color: #bb944a;
+    vertical-align: middle;
+}
+.product-detail-list .tab-content .table td {
+    height: 46px;
+    vertical-align: middle;
+}
+
+.product-detail-list .tab-content .page-title h4 {
+    color: #333;
+    margin: 0 0 10px;
+}
+.product-detail-list .tab-content .bank-info{
+    margin-bottom: 100px;
+}
+.product-detail-list .tab-content .bank-info h4 span{
+    margin-right: 20px;
+}
