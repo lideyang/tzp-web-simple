@@ -23,6 +23,12 @@ ul {
     color: #666;
 }
 
+@media (min-width: 1200px){
+    .container {
+        width: 1180px;
+    }
+}
+
 /* header */
 .wp {
     width: 1200px;

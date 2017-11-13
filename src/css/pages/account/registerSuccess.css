@@ -1,5 +1,5 @@
-.reg-success-container {
-
+.register-layer{
+    background: url(/public/images/login_bg.png) repeat center;
 }
 
 .reg-success-container .content {

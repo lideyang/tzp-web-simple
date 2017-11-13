@@ -1,4 +1,8 @@
 /*注册页*/
+.register-layer{
+    background: url(/public/images/login_bg.png) repeat center;
+}
+
 .register-layer .register-form .company-form .list-group {
     position: relative;
     margin: 0;
