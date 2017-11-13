@@ -197,3 +197,58 @@ body {
 .product-detail-list .tab-content .bank-info h4 span{
     margin-right: 20px;
 }
+/*认购灯箱*/
+.layui-layer,.subscription-modal{
+    border-radius: 6px!important;
+}
+.subscription-modal{
+    display: none;
+    padding: 28px 34px;
+    background-color: #f2f2f2;
+}
+.subscription-modal h2{
+    font-size: 24px;
+    margin: 0 0 20px;
+}
+.subscription-modal .table,.subscription-modal .table td{
+    border-color: #d3cea3;
+    font-size: 16px;
+}
+.subscription-modal .table td{
+    height: 46px;
+    vertical-align: middle;
+}
+.subscription-modal .table td.discount-type label{
+    margin: 0;
+    font-size: 14px;
+    font-weight: normal;
+    vertical-align: middle;
+    margin:0 7px 0 3px;
+}
+.subscription-modal .table td b{
+    font-size: 22px;
+    margin: 0 5px 0 0;
+}
+.subscription-modal .table td.text-right{
+    width: 140px;
+}
+.subscription-modal .btn-subscription{
+    padding: 8px 45px;
+    font-size: 24px;
+}
+.discount-select.bootstrap-select.btn-group.show-tick{
+    margin: 10px 0 0;
+    width: 282px;
+}
+.discount-select.bootstrap-select.btn-group.show-tick .dropdown-menu li a span.check-mark {
+    position: absolute;
+    display: inline-block;
+    right: 15px;
+    color: #d4d4d4;
+}
+.discount-select.bootstrap-select.btn-group.show-tick .dropdown-menu li.selected a span.check-mark {
+    color: #2ac247;
+}
+.discount-select.bootstrap-select.btn-group.show-tick .dropdown-menu li a{
+    padding: 8px 20px;
+}

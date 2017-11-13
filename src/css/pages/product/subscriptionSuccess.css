@@ -1,0 +1,56 @@
+/*认购成功页*/
+body {
+    background-color: #efefef;
+}
+
+.product-list-banner {
+    height: 336px;
+    background: url('/public/images/product/product_list_banner.jpg') no-repeat center;
+}
+
+.subscription-success {
+    width: 800px;
+    background-color: #fff;
+    margin: 70px auto;
+    padding: 70px 0;
+}
+
+.subscription-success .content {
+    width: 550px;
+    margin: 0 auto;
+    font-size: 24px;
+    color: #060001;
+}
+
+.subscription-success .content .icon-right {
+    font-size: 100px;
+    margin: 0 20px 0 0;
+    color: #ba9649;
+}
+
+.subscription-success .content h2 {
+    font-size: 36px;
+    margin: 30px 0 10px;
+}
+
+.subscription-success .process {
+    margin: 0 0 70px;
+    padding: 0 0 0 123px;
+    background: url(/public/images/product/bar.png) no-repeat 30px 12px;
+}
+
+.subscription-success .process ul li {
+    margin: 0 0 56px;
+}
+
+.subscription-success .process ul li span, .subscription-success .process ul li h4 {
+    font-size: 24px;
+}
+
+.subscription-success .process ul li span {
+    color: #999;
+}
+.subscription-success .next a{
+    width: 220px;
+    margin-left: 28px;
+}

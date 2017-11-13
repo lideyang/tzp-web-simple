@@ -14,7 +14,7 @@
         },
         initEvent: function () {
             var self = this;
-            $('input').iCheck({ //checkbox增强
+            $('.icheck').iCheck({ //checkbox增强
                 checkboxClass: 'icheckbox',
                 radioClass: 'iradio'
             });

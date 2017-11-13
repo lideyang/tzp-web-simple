@@ -102,7 +102,7 @@
                         <input type="number" class="form-control" id="subscriptionTxt" />
                         <span class="text-default input-text">元</span>
                     </div>
-                    <button class="btn btn-block btn-lg btn-primary">我要认购</button>
+                    <button class="btn btn-block btn-lg btn-primary" id="subscriptionBtn">我要认购</button>
                 </div>
             </div>
         </div>
@@ -301,6 +301,51 @@
         </div>
     </dic>
 </div>
+<!--认购灯箱-->
+<div id="subscriptionModal" class="subscription-modal text-default">
+    <h2 class="text-center">投资确认</h2>
+    <table class="table table-bordered">
+        <tbody>
+        <tr>
+            <td class="text-right">产品名称：</td>
+            <td>派派福171026002</td>
+        </tr>
+        <tr>
+            <td class="text-right">认购金额：</td>
+            <td><b>50,000</b>元</td>
+        </tr>
+        <tr>
+            <td class="text-right">预计收益：</td>
+            <td><b>5,000</b>元</td>
+        </tr>
+        <tr>
+            <td class="text-right">红包/加息券：</td>
+            <td class="discount-type">
+                <input class="icheck" type="radio" id="redRadio" name="discountType" value="1">
+                <label for="redRadio">红包</label>
+                <input class="icheck" type="radio" id="jiaxiRadio" name="discountType" value="2">
+                <label for="jiaxiRadio">加息券</label>
+                <div>
+                    <select class="selectpicker discount-select" title="三个可用红包" multiple>
+                        <option>满10,000抵60（限3个月以上）</option>
+                        <option>满50,000抵120（限3个月以上）</option>
+                        <option>满100,000抵360（<span class="text-danger">限6个月以上</span>）</option>
+                    </select>
+                </div>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+    <p class="agree">
+        <label>
+            <input class="icheck vertical-middle" type="checkbox" id="agreement" name="agreement" value="true">
+            <span class="vertical-middle agree-link">我已同意并阅读<a href="#">《深南金服-认购协议》</a><a href="#">《深南金服-认购服务协议》</a></span>
+        </label>
+    </p>
+    <p class="text-center">
+        <button class="btn btn-primary btn-subscription" id="submitSubscriptionBtn">实付<span id="subscriptionMoney"></span>元</button>
+    </p>
+</div>
 <div class="m-join">
     <div class="wp">
         <a href="javascript:void(0);" class="appClick">立即加入领888红包</a>
@@ -385,6 +430,8 @@
 <!-- 公共js -->
 <script src="/src/js/common.js"></script>
 <script src="/public/js/plugins/layer/layer.js"></script>
+<script src="/public/js/plugins/icheck/icheck.min.js"></script>
+<script src="/public/js/plugins/select/bootstrap-select.js"></script>
 <!-- 页面js -->
 <script src="/src/js/pages/product/detail.js"></script>
 </body>
