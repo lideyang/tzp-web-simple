@@ -95,7 +95,6 @@
 }
 
 .login-form .company-form .submit .btn {
-    line-height: 2.2;
     font-size: 18px;
 }
 
@@ -150,7 +149,7 @@
 }
 .login-new .login-container .logo-layer {
     padding: 25px 0;
-    margin-bottom: 0;
+    margin: 0;
 }
 
 .login-new .login-container .logo-layer .info p {
@@ -159,15 +158,16 @@
 
 .login-new .login-content {
     height: 568px;
-    background-color: #c0a16b;
+    background:url('/public/images/login_bg2.png') no-repeat center #f9f7f3;
 }
 
 .login-new .login-content .login-form {
     position: absolute;
     right: 130px;
-    top: 30px;
+    top: 40px;
     width: 440px;
     padding-bottom: 20px;
+    box-shadow: 0px 0px 12px rgba(60,60,60,.2);
 }
 
 .login-new .copyright {

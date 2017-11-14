@@ -1,6 +1,8 @@
 /*注册页*/
-.register-layer{
-    background: url(/public/images/login_bg.png) repeat center;
+.register-layer {
+    background: url(/public/images/login_bg.jpg) repeat center;
+    background-size: 100% 100%;
+    background-attachment: fixed;
 }
 
 .register-layer .register-form .company-form .list-group {
