@@ -20,7 +20,7 @@
                 width: $progressBar.data('progress') + '%'
             })
         },
-        initEvent(){
+        initEvent: function () {
             var self = this;
             $('.icheck').iCheck({ //checkbox增强
                 checkboxClass: 'icheckbox',

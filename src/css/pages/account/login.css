@@ -158,7 +158,7 @@
 
 .login-new .login-content {
     height: 568px;
-    background:url('/public/images/login_bg2.png') no-repeat center #f9f7f3;
+    background:url('/public/images/login_bg2.jpg') no-repeat top center;
 }
 
 .login-new .login-content .login-form {
